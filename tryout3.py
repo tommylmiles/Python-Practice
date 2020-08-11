@@ -1,0 +1,16 @@
+
+places = ["St.Johns","Paris","Egypt","Africa","Puerto Rico"]
+print(places)
+print(sorted(places))
+print(places)
+print(sorted(places, reverse=True))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+places.sort()
+print(places)
+places.sort(reverse=True)
+print(places)
+print(f"I have been to 3 of the {len(places)} listed places on this list")
