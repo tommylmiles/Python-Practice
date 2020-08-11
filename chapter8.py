@@ -30,10 +30,25 @@ while True:
     print(Artwork)
 '''
 text_msg = ['Hey There','BRB','New Phone, Who dis?']
-
+empty_msg = []
 def show_messages(messages):
         for message in messages:
             print(message)
 
 
 show_messages(text_msg)
+
+def show_message():
+    for txt in text_msg:
+        print(txt)
+show_message()
+
+def send_message(outbound,inbound):
+    while outbound:
+        sending = outbound.pop()
+        inbound.append(sending)
+    print("Done")
+
+send_message(text_msg[:],empty_msg)
+print(text_msg)
+print(empty_msg)
